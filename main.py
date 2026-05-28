@@ -22,7 +22,19 @@ while True:
              "nome": nome,
              "tipo_de_exame": tipo_de_exame,
              "valor_do_exame": valor_do_exame,
-             "data"
+             "data_do_exame": data_do_exame,
+             "hora_do_exame": hora_do_exame,
+             "resultado_do_exame": resultado_do_exame
             }
             lista_itens.append(novo_item)
             print("Item cadastrado com sucesso")
+
+        case 2:
+            for item in lista_itens: # o que será mostrado na tela para o usuário
+
+                print(f"Nome: {item["nome"]}")
+                print(f"Exame: {item["tipo_de_exame"]}")
+                print(f"Valor: {item["valor_do_exame"]}")
+                print(f"Data: {item["data_do_exame"]}")
+                print(f"Hora; {item["hora_do_exame"]}")
+                print(f"Resultado: {item["resultado_do_exame"]}")

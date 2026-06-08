@@ -52,3 +52,8 @@ while True:
                 print(f"Hora; {item['hora_do_exame']}")
                 print(f"Resultado: {item['resultado_do_exame']}")
                 print("=" * 20) 
+        case 3:
+            nome = input("Digite o nome do produto para remover: ")
+            for item in lista_itens: # se o nome estiver na lista ele irar remover, caso seja digitado para remover.
+                if item ["nome"] == nome:
+                    lista_itens.remove(item)

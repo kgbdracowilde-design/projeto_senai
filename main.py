@@ -1,3 +1,6 @@
+def mostrar_linha():
+    print('-' *24)
+
 dev = True
 if dev ==True:
     item1 = {
@@ -42,16 +45,16 @@ while True:
             print("Item cadastrado com sucesso")
 
         case 2:
-            print("-" * 20)
+            mostrar_linha()
             for item in lista_de_itens: # o que será mostrado na tela para o usuário
-                print("=" * 20)
+                mostrar_linha()
                 print(f"Nome: {item['nome']}")
                 print(f"Exame: {item['tipo_de_exame']}")
                 print(f"Valor: {item['valor_do_exame']}")
                 print(f"Data: {item['data_do_exame']}")
                 print(f"Hora; {item['hora_do_exame']}")
                 print(f"Resultado: {item['resultado_do_exame']}")
-                print("=" * 20) 
+                mostrar_linha() 
         case 3:
             nome = input("Digite o nome do produto para remover: ")
             for item in lista_itens: # se o nome estiver na lista ele irar remover, caso seja digitado para remover.
